@@ -11,7 +11,7 @@ document.getElementById('grid-generator').addEventListener('click', function(){
     let punteggio = 0;
     let gameEnded = false;
 
-    function generaBombe(totalCells, totalBombs) { //genera bombe
+    function generaBombe(celleTotali, bombeTotali) { //genera bombe
         const bombs = [];
         while (bombs.length < bombeTotali) {
             const bombPosition = Math.floor(Math.random() * celleTotali) + 1;
@@ -21,7 +21,8 @@ document.getElementById('grid-generator').addEventListener('click', function(){
         }
         return bombs;
     }
-
+    const bombs = generateBombs(celleTotali, bombeTotali); //controllo in console
+    console.log('Bombs:', bombs);
 
     for(let i=0 ; i<100; i++){
         const quadrati= document.createElement('article'); //questo serve a creare un article.
