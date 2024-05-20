@@ -18,6 +18,7 @@ main{
     justify-content: center;
     background-color: cadetblue;
     height: 100vh;
+    flex-direction: column;
 }
 
 .square{
@@ -29,7 +30,7 @@ main{
     background-color: blanchedalmond;
     border: 1px solid black;
 }
-section{
+#grid-container{
     display: grid;
     grid-template-columns: repeat(10, 3rem);
     width: 30rem;
@@ -45,4 +46,9 @@ section{
 .bomb{
     background-color: red;
     color: white;
+}
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
