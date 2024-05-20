@@ -12,3 +12,25 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 difficoltà 1 ⇒ 100 caselle, con un numero compreso tra 1 e 100, divise in 10 caselle per 10 righe;
 difficoltà 2 ⇒ 81 caselle, con un numero compreso tra 1 e 81, divise in 9 caselle per 9 righe;
 difficoltà 3 ⇒ 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;
+
+
+SCOMPOSIZIONE ESERCIZIO:
+
+- Creare in js:
+    - definisco le variabili: 
+        - 100 numeri
+        - 16 bombe
+        - punteggio
+        - stato del gioco
+
+    - creazione di una fuzione che crei numeri casuali (16)
+        - creazione di array che memorizzi le bombe.
+    
+    - gestione del click:
+        - verificare se abbiamo cliccato su una bomba o se sono state cliccate tutte le celle NON bombe:
+
+            - verificare se abbiamo cliccato una bomba (colorare la cella di rosso e termina partita).
+            - verificare se non è una bomba:
+                - colorare di azzurro e incrementare il punteggio.
+    - creare una funzione per terminare la partita:
+        - mostrare il punteggio finale.
