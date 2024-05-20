@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(10, 3rem);
+    width: 30rem;
+    height: 30rem;
+}
+.active{
+    background-color: rgb(46, 68, 68);
+    color: white;
+}
+.square:hover{
+    background-color: rgb(255, 214, 151);
+}
