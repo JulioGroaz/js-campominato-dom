@@ -32,7 +32,7 @@ document.getElementById('grid-generator').addEventListener('click', function(){
         quadrati.addEventListener('click', function(){  //qui creo una click function che mi permette di cambiare colore alle caselle una volta che vengono cliccate.
             if(gameEnded){ //se il gioco è finito allora non fare nulla
                 return
-            } else if(bombs.includes(i)){ //se all'interno della cella cliccata è presente una bomb allora non hai vinto.
+            } else if(bombs.includes(i +1)){ //se all'interno della cella cliccata è presente una bomb allora non hai vinto.
                 quadrati.classList.add('bomb');
                 endGame(false);
             } else{ 
