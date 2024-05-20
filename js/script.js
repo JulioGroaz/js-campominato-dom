@@ -24,7 +24,7 @@ document.getElementById('grid-generator').addEventListener('click', function(){
     const bombs = generateBombs(celleTotali, bombeTotali); //controllo in console
     console.log('Bombs:', bombs);
 
-    for(let i=0 ; i<100; i++){
+    for(let i=0 ; i<celleTotali; i++){
         const quadrati= document.createElement('article'); //questo serve a creare un article.
         quadrati.classList.add('square'); // serve a creare un quadrato.
         quadrati.append(i +1);
