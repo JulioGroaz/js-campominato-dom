@@ -61,8 +61,7 @@ document.getElementById('grid-generator').addEventListener('click', function(){
         } else {
             esito = `HAI PERSO... IL TUO PUNTEGGIO è DI: ${punteggio}`;
         }
-    
-        document.getElementById('esito').innerText = esito;
+    document.getElementById('esito').innerText = esito;
     }
     
 });
