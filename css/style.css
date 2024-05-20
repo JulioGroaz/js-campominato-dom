@@ -42,3 +42,7 @@ section{
 .square:hover{
     background-color: rgb(255, 214, 151);
 }
+.bomb{
+    background-color: red;
+    color: white;
+}

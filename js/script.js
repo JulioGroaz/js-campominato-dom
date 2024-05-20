@@ -6,6 +6,23 @@ document.getElementById('grid-generator').addEventListener('click', function(){
     const gridContainer = document.getElementById('grid-container');
     gridContainer.innerHTML = ''; //così da ripulire il container una volta che si clicca il grid generator.
 
+    const celleTotali = 100;
+    const bombeTotali = 16;
+    let punteggio = 0;
+    let gameEnded = false;
+
+    function generaBombe(totalCells, totalBombs) { //genera bombe
+        const bombs = [];
+        while (bombs.length < bombeTotali) {
+            const bombPosition = Math.floor(Math.random() * celleTotali) + 1;
+            if (!bombs.includes(bombPosition)) {
+                bombs.push(bombPosition);
+            }
+        }
+        return bombs;
+    }
+
+
     for(let i=0 ; i<100; i++){
         const quadrati= document.createElement('article'); //questo serve a creare un article.
         quadrati.classList.add('square'); // serve a creare un quadrato.
